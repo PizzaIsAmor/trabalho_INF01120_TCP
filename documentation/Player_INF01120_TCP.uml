@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_I6cvAHgbEem__Zdd98yKcw" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_a-KH4HgiEem__Zdd98yKcw" name="ClassDiagram">
+    <packagedElement xmi:type="uml:Class" xmi:id="_hGdVUHhCEemfYIt1sDs4_Q" name="Interface"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GyjcUHhFEemfYIt1sDs4_Q" name="Tocador">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_UkunYHh0EemSMK_ZCOIU2w" name="Tocador"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_XNrmoHh0EemSMK_ZCOIU2w" name="Tocador">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_At-C4Hh1EemSMK_ZCOIU2w" name="melodia" type="_LCEwwHhFEemfYIt1sDs4_Q"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_YScPQHh0EemSMK_ZCOIU2w" name="construtorDeMusica">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_skX3YHh0EemSMK_ZCOIU2w" name="texto">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_x3Vl0Hh0EemSMK_ZCOIU2w" name="play"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Kp1P4HhFEemfYIt1sDs4_Q" name="Interface"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LCEwwHhFEemfYIt1sDs4_Q" name="Musica">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_kg-NAHhFEemfYIt1sDs4_Q" name="posicao">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_qxoSwHhFEemfYIt1sDs4_Q">
+          <body>posicao : String</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_QiGsAHhfEemSMK_ZCOIU2w" name="quantidade">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_HymOIHhzEemSMK_ZCOIU2w" name="Musica">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_O5UZMHhzEemSMK_ZCOIU2w" name="texto">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Fqr0gHh1EemSMK_ZCOIU2w" name="Musica">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_JPBd8Hh1EemSMK_ZCOIU2w" name="melodia" type="_LCEwwHhFEemfYIt1sDs4_Q"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_V0RZIHhzEemSMK_ZCOIU2w" name="tocaNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_MLEGwHjBEemSMK_ZCOIU2w" name="umaNota">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mzCAUHhzEemSMK_ZCOIU2w" name="tocaMusica">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_41gAQHjAEemSMK_ZCOIU2w" name="umaMusica" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_yAiakHhzEemSMK_ZCOIU2w" name="terminouMusica">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_-XgQQHjAEemSMK_ZCOIU2w" name="jaTerminou" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_G0qJwHh0EemSMK_ZCOIU2w" name="proximaNota"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gfnQYHhFEemfYIt1sDs4_Q" memberEnd="_gfn3cHhFEemfYIt1sDs4_Q _gfn3cXhFEemfYIt1sDs4_Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gfnQYXhFEemfYIt1sDs4_Q" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gfnQYnhFEemfYIt1sDs4_Q" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gfn3cXhFEemfYIt1sDs4_Q" type="_LCEwwHhFEemfYIt1sDs4_Q" association="_gfnQYHhFEemfYIt1sDs4_Q"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gfn3cHhFEemfYIt1sDs4_Q" type="_GyjcUHhFEemfYIt1sDs4_Q" association="_gfnQYHhFEemfYIt1sDs4_Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bisroHhfEemSMK_ZCOIU2w" name="ItemMusical">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_q4kCYHhfEemSMK_ZCOIU2w" name="representaNota">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ly7qsHhyEemSMK_ZCOIU2w" name="ItemMusical">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_1e070HhyEemSMK_ZCOIU2w" name="ehNota">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_q2XvYHhyEemSMK_ZCOIU2w" name="ehNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_dvK2sHjBEemSMK_ZCOIU2w" name="ehNota" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_sLz4UHhyEemSMK_ZCOIU2w" name="ehControle">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_hMdc8HjBEemSMK_ZCOIU2w" name="ehControle" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_z-nWAHhhEemSMK_ZCOIU2w" memberEnd="_z-6Q8HhhEemSMK_ZCOIU2w _z-9UQHhhEemSMK_ZCOIU2w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_z-qZUHhhEemSMK_ZCOIU2w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_z-rAYHhhEemSMK_ZCOIU2w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_z-9UQHhhEemSMK_ZCOIU2w" type="_bisroHhfEemSMK_ZCOIU2w" aggregation="composite" association="_z-nWAHhhEemSMK_ZCOIU2w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FxtkMHhiEemSMK_ZCOIU2w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FxycsHhiEemSMK_ZCOIU2w" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_z-6Q8HhhEemSMK_ZCOIU2w" type="_LCEwwHhFEemfYIt1sDs4_Q" association="_z-nWAHhhEemSMK_ZCOIU2w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OVJk4HhiEemSMK_ZCOIU2w" name="Nota">
+      <generalization xmi:type="uml:Generalization" xmi:id="_IDagEHhtEemSMK_ZCOIU2w" general="_bisroHhfEemSMK_ZCOIU2w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_45StAHhxEemSMK_ZCOIU2w" name="oitava">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__4ALkHhxEemSMK_ZCOIU2w" name="Nota"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_AhUOUHhyEemSMK_ZCOIU2w" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_20v0AHjBEemSMK_ZCOIU2w" name="umaNota" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XAIGEHhkEemSMK_ZCOIU2w" name="Oitava">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Gu3noHhwEemSMK_ZCOIU2w" name="oitavaAtual" visibility="private" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_lwoPgHhwEemSMK_ZCOIU2w" name="Oitava"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_UXhZMHhxEemSMK_ZCOIU2w" name="Oitava">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_jNM0AHhxEemSMK_ZCOIU2w" name="ehAumenta">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_syxAEHhxEemSMK_ZCOIU2w" name="Oitava">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_syxAEXhxEemSMK_ZCOIU2w" name="modificaOitava">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_vWTJQHhwEemSMK_ZCOIU2w" name="aumentaOitava">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_cNelAHjCEemSMK_ZCOIU2w" name="umaOitava" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_zNYIgHhwEemSMK_ZCOIU2w" name="diminuiOitava">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_VnP34HjCEemSMK_ZCOIU2w" name="umaOitava" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_GUQ50HhxEemSMK_ZCOIU2w" name="reiniciaOitava">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_S71agHjCEemSMK_ZCOIU2w" name="umaOitava" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_5Tvp0HhwEemSMK_ZCOIU2w" name="ehValida">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_NaWu8HjCEemSMK_ZCOIU2w" name="ehValida" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_By8qwHhxEemSMK_ZCOIU2w" name="lerOitava">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_J3DAQHjCEemSMK_ZCOIU2w" name="umaOitava" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_a0rVwHhkEemSMK_ZCOIU2w" name="receber oitava atual" memberEnd="_a0sj4nhkEemSMK_ZCOIU2w _a0tK8HhkEemSMK_ZCOIU2w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a0sj4HhkEemSMK_ZCOIU2w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a0sj4XhkEemSMK_ZCOIU2w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_a0tK8HhkEemSMK_ZCOIU2w" type="_OVJk4HhiEemSMK_ZCOIU2w" association="_a0rVwHhkEemSMK_ZCOIU2w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_a0sj4nhkEemSMK_ZCOIU2w" type="_XAIGEHhkEemSMK_ZCOIU2w" association="_a0rVwHhkEemSMK_ZCOIU2w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_B063IHhlEemSMK_ZCOIU2w" name="NotaDo">
+      <generalization xmi:type="uml:Generalization" xmi:id="_3cSZ8HhlEemSMK_ZCOIU2w" general="_OVJk4HhiEemSMK_ZCOIU2w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_MPqEwHhyEemSMK_ZCOIU2w" name="NotaDo"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8t3L0HhmEemSMK_ZCOIU2w" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_hh2bkHhoEemSMK_ZCOIU2w" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_MhSoUHhnEemSMK_ZCOIU2w" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_MoI3MHhnEemSMK_ZCOIU2w" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_Mtvv8HhnEemSMK_ZCOIU2w" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_Myno4HhnEemSMK_ZCOIU2w" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_M3PqMHhnEemSMK_ZCOIU2w" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pAD5kHhoEemSMK_ZCOIU2w" name="NotaRe">
+      <generalization xmi:type="uml:Generalization" xmi:id="_pAD5kXhoEemSMK_ZCOIU2w" general="_OVJk4HhiEemSMK_ZCOIU2w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_pAD5knhoEemSMK_ZCOIU2w" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_pAD5k3hoEemSMK_ZCOIU2w" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Op1BIHhyEemSMK_ZCOIU2w" name="NotaRe"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_pAD5lHhoEemSMK_ZCOIU2w" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_pAD5lXhoEemSMK_ZCOIU2w" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_pAD5lnhoEemSMK_ZCOIU2w" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_pAD5l3hoEemSMK_ZCOIU2w" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_pAD5mHhoEemSMK_ZCOIU2w" name="Class1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_piYjgHhoEemSMK_ZCOIU2w" name="NotaDo">
+        <generalization xmi:type="uml:Generalization" xmi:id="_piYjgXhoEemSMK_ZCOIU2w" general="_OVJk4HhiEemSMK_ZCOIU2w"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_piYjgnhoEemSMK_ZCOIU2w" name="lerNota">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_piYjg3hoEemSMK_ZCOIU2w" direction="return" effect="create">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_piYjhHhoEemSMK_ZCOIU2w" name="PrimitiveType1"/>
+        <nestedClassifier xmi:type="uml:Interface" xmi:id="_piYjhXhoEemSMK_ZCOIU2w" name="Interface1"/>
+        <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_piYjhnhoEemSMK_ZCOIU2w" name="Enumeration1"/>
+        <nestedClassifier xmi:type="uml:DataType" xmi:id="_piYjh3hoEemSMK_ZCOIU2w" name="DataType1"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_piYjiHhoEemSMK_ZCOIU2w" name="Class1"/>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_p69bkHhoEemSMK_ZCOIU2w" name="NotaMi">
+      <generalization xmi:type="uml:Generalization" xmi:id="_p69bkXhoEemSMK_ZCOIU2w" general="_OVJk4HhiEemSMK_ZCOIU2w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_p69bknhoEemSMK_ZCOIU2w" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_p69bk3hoEemSMK_ZCOIU2w" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_cl0a4HhyEemSMK_ZCOIU2w" name="NotaMi"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_p69blHhoEemSMK_ZCOIU2w" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_p69blXhoEemSMK_ZCOIU2w" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_p69blnhoEemSMK_ZCOIU2w" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_p69bl3hoEemSMK_ZCOIU2w" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_p69bmHhoEemSMK_ZCOIU2w" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_js5hYHhpEemSMK_ZCOIU2w" name="NotaSi">
+      <generalization xmi:type="uml:Generalization" xmi:id="_js5hYXhpEemSMK_ZCOIU2w" general="_OVJk4HhiEemSMK_ZCOIU2w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_js5hYnhpEemSMK_ZCOIU2w" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_js5hY3hpEemSMK_ZCOIU2w" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bT0ngHhyEemSMK_ZCOIU2w" name="NotaSi"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_js5hZHhpEemSMK_ZCOIU2w" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_js5hZXhpEemSMK_ZCOIU2w" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_js5hZnhpEemSMK_ZCOIU2w" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_js5hZ3hpEemSMK_ZCOIU2w" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_js5haHhpEemSMK_ZCOIU2w" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qztzEHhpEemSMK_ZCOIU2w" name="NotaLa">
+      <generalization xmi:type="uml:Generalization" xmi:id="_qztzEXhpEemSMK_ZCOIU2w" general="_OVJk4HhiEemSMK_ZCOIU2w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_qztzEnhpEemSMK_ZCOIU2w" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_qztzE3hpEemSMK_ZCOIU2w" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ZqB_MHhyEemSMK_ZCOIU2w" name="NotaLa"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_qztzFHhpEemSMK_ZCOIU2w" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_qztzFXhpEemSMK_ZCOIU2w" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_qztzFnhpEemSMK_ZCOIU2w" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_qztzF3hpEemSMK_ZCOIU2w" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_qztzGHhpEemSMK_ZCOIU2w" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_tPf5AHhpEemSMK_ZCOIU2w" name="NotaSol">
+      <generalization xmi:type="uml:Generalization" xmi:id="_tPf5AXhpEemSMK_ZCOIU2w" general="_OVJk4HhiEemSMK_ZCOIU2w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_tPf5AnhpEemSMK_ZCOIU2w" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_tPggEHhpEemSMK_ZCOIU2w" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_TnAFwHhyEemSMK_ZCOIU2w" name="NotaSol"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_tPggEXhpEemSMK_ZCOIU2w" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_tPggEnhpEemSMK_ZCOIU2w" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_tPggE3hpEemSMK_ZCOIU2w" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_tPggFHhpEemSMK_ZCOIU2w" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_tPggFXhpEemSMK_ZCOIU2w" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_vnkjoHhpEemSMK_ZCOIU2w" name="NotaFa">
+      <generalization xmi:type="uml:Generalization" xmi:id="_vnkjoXhpEemSMK_ZCOIU2w" general="_OVJk4HhiEemSMK_ZCOIU2w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_vnkjonhpEemSMK_ZCOIU2w" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_vnkjo3hpEemSMK_ZCOIU2w" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_RK9hIHhyEemSMK_ZCOIU2w" name="NotaFa"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_vnlKsHhpEemSMK_ZCOIU2w" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_vnlKsXhpEemSMK_ZCOIU2w" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_vnlKsnhpEemSMK_ZCOIU2w" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_vnlKs3hpEemSMK_ZCOIU2w" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_vnlKtHhpEemSMK_ZCOIU2w" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3GN0kHhrEemSMK_ZCOIU2w" name="Parametro">
+      <generalization xmi:type="uml:Generalization" xmi:id="_MIYxYHhtEemSMK_ZCOIU2w" general="_bisroHhfEemSMK_ZCOIU2w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_aFUFoHh1EemSMK_ZCOIU2w" name="Parametro"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_c4_HIHh1EemSMK_ZCOIU2w" name="lerParametro">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_rnjGUHjCEemSMK_ZCOIU2w" name="umParametro" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_68YN0HhrEemSMK_ZCOIU2w" name="Volume">
+      <generalization xmi:type="uml:Generalization" xmi:id="_io8psHhsEemSMK_ZCOIU2w" general="_3GN0kHhrEemSMK_ZCOIU2w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_F-8s8Hh4EemSMK_ZCOIU2w" name="volumeAtual">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ImsyUHh4EemSMK_ZCOIU2w" name="Volume">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_kBdeUHh4EemSMK_ZCOIU2w" name="setDefault">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_LNYgsHh4EemSMK_ZCOIU2w" name="Volume">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_npGTYHh4EemSMK_ZCOIU2w" name="opcao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_MH5oMHh4EemSMK_ZCOIU2w" name="Volume">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_uaAmgHh4EemSMK_ZCOIU2w" name="ehMultiplica">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ONro8Hh4EemSMK_ZCOIU2w" name="lerParametro">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_YM29UHjEEemSMK_ZCOIU2w" name="umVolume" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_P8Z0kHh4EemSMK_ZCOIU2w" name="divideVolume">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_YvYbkHjEEemSMK_ZCOIU2w" name="umVolume" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_SVRJYHh4EemSMK_ZCOIU2w" name="dobraVolume">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_WEjNAHjEEemSMK_ZCOIU2w" name="umVolume" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Uqbp8Hh4EemSMK_ZCOIU2w" name="reiniciaVolume">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_SQ1q0HjEEemSMK_ZCOIU2w" name="umVolume" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_V0zLUHh4EemSMK_ZCOIU2w" name="volumeValido">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Og3ZIHjEEemSMK_ZCOIU2w" name="ehValido" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_-2bokHhrEemSMK_ZCOIU2w" name="Parametros"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7JJegHhrEemSMK_ZCOIU2w" name="Tempo">
+      <generalization xmi:type="uml:Generalization" xmi:id="_jOSycHhsEemSMK_ZCOIU2w" general="_3GN0kHhrEemSMK_ZCOIU2w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TECwYHh3EemSMK_ZCOIU2w" name="bpmAtual">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Ycc_gHh3EemSMK_ZCOIU2w" name="Tempo">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_6QapQHh3EemSMK_ZCOIU2w" name="setDefault">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bELPsHh3EemSMK_ZCOIU2w" name="Tempo">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_2ydUoHh3EemSMK_ZCOIU2w" name="opcao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_dh52YHh3EemSMK_ZCOIU2w" name="Tempo">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABZwcHh4EemSMK_ZCOIU2w" name="ehIncrementa">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_e1-GUHh3EemSMK_ZCOIU2w" name="lerParametro">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_FHz_EHjEEemSMK_ZCOIU2w" name="umTempo" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_gSw0cHh3EemSMK_ZCOIU2w" name="aumentaTempo">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_-6YzgHjDEemSMK_ZCOIU2w" name="umTempo" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_hkpTEHh3EemSMK_ZCOIU2w" name="diminuiTempo">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_5wAZUHjDEemSMK_ZCOIU2w" name="umTempo" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_jkkjcHh3EemSMK_ZCOIU2w" name="tempoValido">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_rjcM8HjDEemSMK_ZCOIU2w" name="ehValido" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xC_QYHh3EemSMK_ZCOIU2w" name="reiniciaTempo">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_0pUzYHjDEemSMK_ZCOIU2w" name="umTempo" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7V-ZkHhrEemSMK_ZCOIU2w" name="Instrumento">
+      <generalization xmi:type="uml:Generalization" xmi:id="_j1fVUHhsEemSMK_ZCOIU2w" general="_3GN0kHhrEemSMK_ZCOIU2w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_aZw2MHh2EemSMK_ZCOIU2w" name="codigoInstrumentoAtual" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_o2NRoHh2EemSMK_ZCOIU2w" name="Instrumento"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_rPTP8Hh2EemSMK_ZCOIU2w" name="Instrumento">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_wn0z0Hh2EemSMK_ZCOIU2w" name="codigoInstrumento">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_0u0eYHh2EemSMK_ZCOIU2w" name="novoInstrumento">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_KsbToHjDEemSMK_ZCOIU2w" name="umInstrumento" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_27oUMHh2EemSMK_ZCOIU2w" name="lerParametro">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_U57pcHjDEemSMK_ZCOIU2w" name="umInstrumento" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_6gds4Hh2EemSMK_ZCOIU2w" name="instrumentoValido">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_AdY-UHh3EemSMK_ZCOIU2w" name="codigoInstrumento">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_YztXYHjDEemSMK_ZCOIU2w" name="ehValido" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ptLsAHhtEemSMK_ZCOIU2w" memberEnd="_ptMTEnhtEemSMK_ZCOIU2w _ptM6IHhtEemSMK_ZCOIU2w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ptMTEHhtEemSMK_ZCOIU2w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ptMTEXhtEemSMK_ZCOIU2w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ptM6IHhtEemSMK_ZCOIU2w" type="_GyjcUHhFEemfYIt1sDs4_Q" association="_ptLsAHhtEemSMK_ZCOIU2w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ptMTEnhtEemSMK_ZCOIU2w" type="_hGdVUHhCEemfYIt1sDs4_Q" association="_ptLsAHhtEemSMK_ZCOIU2w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_feovkHjJEemSMK_ZCOIU2w" name="controle" memberEnd="_feygkXjJEemSMK_ZCOIU2w _feygknjJEemSMK_ZCOIU2w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_feovkXjJEemSMK_ZCOIU2w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_feygkHjJEemSMK_ZCOIU2w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_feygknjJEemSMK_ZCOIU2w" type="_XAIGEHhkEemSMK_ZCOIU2w" association="_feovkHjJEemSMK_ZCOIU2w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_feygkXjJEemSMK_ZCOIU2w" type="_LCEwwHhFEemfYIt1sDs4_Q" association="_feovkHjJEemSMK_ZCOIU2w"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HZVtgHhbEemSMK_ZCOIU2w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HZXisHhbEemSMK_ZCOIU2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_-Lo6kHgoEem__Zdd98yKcw" name="UseCase">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_FL4DIXgpEem__Zdd98yKcw" name="Interação com a interface"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_FL21BngpEem__Zdd98yKcw" name="Tocar musica"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FL4DIngpEem__Zdd98yKcw" memberEnd="_FL4DJXgpEem__Zdd98yKcw _FL4DJngpEem__Zdd98yKcw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FL4DI3gpEem__Zdd98yKcw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FL4DJHgpEem__Zdd98yKcw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FL4DJXgpEem__Zdd98yKcw" name="usuario" type="_FL4DIHgpEem__Zdd98yKcw" association="_FL4DIngpEem__Zdd98yKcw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FL4DJngpEem__Zdd98yKcw" name="tocar musica" type="_FL21BngpEem__Zdd98yKcw" association="_FL4DIngpEem__Zdd98yKcw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_FL4DJ3gpEem__Zdd98yKcw" name="Salvar em MIDI"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FL3cEHgpEem__Zdd98yKcw" memberEnd="_FL3cE3gpEem__Zdd98yKcw _FL3cFHgpEem__Zdd98yKcw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FL3cEXgpEem__Zdd98yKcw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FL3cEngpEem__Zdd98yKcw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FL3cE3gpEem__Zdd98yKcw" name="usuario" type="_FL4DIHgpEem__Zdd98yKcw" association="_FL3cEHgpEem__Zdd98yKcw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FL3cFHgpEem__Zdd98yKcw" name="salvar em midi" type="_FL4DJ3gpEem__Zdd98yKcw" association="_FL3cEHgpEem__Zdd98yKcw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_FL21BXgpEem__Zdd98yKcw" name="Ler arquivo"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FL3cFXgpEem__Zdd98yKcw" memberEnd="_FL3cGHgpEem__Zdd98yKcw _FL3cGXgpEem__Zdd98yKcw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FL3cFngpEem__Zdd98yKcw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FL3cF3gpEem__Zdd98yKcw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FL3cGHgpEem__Zdd98yKcw" name="usuario" type="_FL4DIHgpEem__Zdd98yKcw" association="_FL3cFXgpEem__Zdd98yKcw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FL3cGXgpEem__Zdd98yKcw" name="ler arquivo" type="_FL21BXgpEem__Zdd98yKcw" association="_FL3cFXgpEem__Zdd98yKcw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_FL4qMHgpEem__Zdd98yKcw" name="Escrever texto"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FL21AHgpEem__Zdd98yKcw" memberEnd="_FL21A3gpEem__Zdd98yKcw _FL21BHgpEem__Zdd98yKcw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FL21AXgpEem__Zdd98yKcw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FL21AngpEem__Zdd98yKcw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FL21A3gpEem__Zdd98yKcw" name="usuario" type="_FL4DIHgpEem__Zdd98yKcw" association="_FL21AHgpEem__Zdd98yKcw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FL21BHgpEem__Zdd98yKcw" name="escrever texto" type="_FL4qMHgpEem__Zdd98yKcw" association="_FL21AHgpEem__Zdd98yKcw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_FL4DIHgpEem__Zdd98yKcw" name="usuario"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_M_XGMHgsEemfYIt1sDs4_Q" name="Decodificar texto">
+      <include xmi:type="uml:Include" xmi:id="_Wib-8HgsEemfYIt1sDs4_Q" addition="_FL4DJ3gpEem__Zdd98yKcw"/>
+      <include xmi:type="uml:Include" xmi:id="_XMiE0HgsEemfYIt1sDs4_Q" addition="_FL21BngpEem__Zdd98yKcw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_-I5O4Hj0Eemxj8C-8xluuw" name="ClassDiagram_Parte2">
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8RQ8Hj1Eemxj8C-8xluuw" name="Musica">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_RMirsHkFEemxj8C-8xluuw" name="umaMusica" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a6ILUHkFEemxj8C-8xluuw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a6OR8HkFEemxj8C-8xluuw" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8R4AHj1Eemxj8C-8xluuw" name="Musica">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8R4AXj1Eemxj8C-8xluuw" name="texto">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8R4Anj1Eemxj8C-8xluuw" name="Musica">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8R4A3j1Eemxj8C-8xluuw" name="melodia" type="_r8RQ8Hj1Eemxj8C-8xluuw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8R4Bnj1Eemxj8C-8xluuw" name="tocaMusica">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8R4B3j1Eemxj8C-8xluuw" name="umaMusica" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_lyVJAHp7Eemam-8madTT3Q" name="decodificador()">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xRpE8Hp7Eemam-8madTT3Q" name="texto">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8TGIHj1Eemxj8C-8xluuw" name="NotaDo">
+      <generalization xmi:type="uml:Generalization" xmi:id="_r8TGIXj1Eemxj8C-8xluuw" general="_r8ghgHj1Eemxj8C-8xluuw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8TGInj1Eemxj8C-8xluuw" name="NotaDo"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8TGI3j1Eemxj8C-8xluuw" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8TGJHj1Eemxj8C-8xluuw" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_r8TGJXj1Eemxj8C-8xluuw" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_r8TGJnj1Eemxj8C-8xluuw" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_r8TGJ3j1Eemxj8C-8xluuw" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_r8TGKHj1Eemxj8C-8xluuw" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_r8TGKXj1Eemxj8C-8xluuw" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8TtMHj1Eemxj8C-8xluuw" name="NotaFa">
+      <generalization xmi:type="uml:Generalization" xmi:id="_r8TtMXj1Eemxj8C-8xluuw" general="_r8ghgHj1Eemxj8C-8xluuw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8TtMnj1Eemxj8C-8xluuw" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8TtM3j1Eemxj8C-8xluuw" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8TtNHj1Eemxj8C-8xluuw" name="NotaFa"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_r8TtNXj1Eemxj8C-8xluuw" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_r8TtNnj1Eemxj8C-8xluuw" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_r8TtN3j1Eemxj8C-8xluuw" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_r8TtOHj1Eemxj8C-8xluuw" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_r8TtOXj1Eemxj8C-8xluuw" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8WwgHj1Eemxj8C-8xluuw" name="Oitava">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_r8WwgXj1Eemxj8C-8xluuw" name="nivelDeClasse" visibility="private" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Ua8YsHp2Eemam-8madTT3Q" name="valorInstancia" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Wwgnj1Eemxj8C-8xluuw" name="Oitava"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8WwhXj1Eemxj8C-8xluuw" name="Oitava">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8Wwhnj1Eemxj8C-8xluuw" name="modificaOitava">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Wwh3j1Eemxj8C-8xluuw" name="aumenta"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8WwiXj1Eemxj8C-8xluuw" name="diminui"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Wwi3j1Eemxj8C-8xluuw" name="reinicia"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8WwjXj1Eemxj8C-8xluuw" name="ehValida">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8Wwjnj1Eemxj8C-8xluuw" name="ehValida" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Wwj3j1Eemxj8C-8xluuw" name="lerOitava">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8WwkHj1Eemxj8C-8xluuw" name="umaOitava" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8YlsHj1Eemxj8C-8xluuw" name="Ritmo">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_r8Ylsnj1Eemxj8C-8xluuw" name="atual" visibility="private" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Ylt3j1Eemxj8C-8xluuw" name="Ritmo">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8YluHj1Eemxj8C-8xluuw" name="ehIncrementa">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8YluXj1Eemxj8C-8xluuw" name="lerRitmo">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8Ylunj1Eemxj8C-8xluuw" name="umTempo" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Ylu3j1Eemxj8C-8xluuw" name="aumenta"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8YlvXj1Eemxj8C-8xluuw" name="diminui"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Ylv3j1Eemxj8C-8xluuw" name="ehValido">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8YlwHj1Eemxj8C-8xluuw" name="ehValido" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8YlwXj1Eemxj8C-8xluuw" name="reinicia"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8ZMwHj1Eemxj8C-8xluuw" name="NotaRe">
+      <generalization xmi:type="uml:Generalization" xmi:id="_r8ZMwXj1Eemxj8C-8xluuw" general="_r8ghgHj1Eemxj8C-8xluuw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8ZMwnj1Eemxj8C-8xluuw" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8ZMw3j1Eemxj8C-8xluuw" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8ZMxHj1Eemxj8C-8xluuw" name="NotaRe"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_r8ZMxXj1Eemxj8C-8xluuw" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_r8ZMxnj1Eemxj8C-8xluuw" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_r8ZMx3j1Eemxj8C-8xluuw" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_r8ZMyHj1Eemxj8C-8xluuw" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_r8ZMyXj1Eemxj8C-8xluuw" name="Class1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_r8ZMynj1Eemxj8C-8xluuw" name="NotaDo">
+        <generalization xmi:type="uml:Generalization" xmi:id="_r8ZMy3j1Eemxj8C-8xluuw" general="_r8ghgHj1Eemxj8C-8xluuw"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_r8ZMzHj1Eemxj8C-8xluuw" name="lerNota">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8ZMzXj1Eemxj8C-8xluuw" direction="return" effect="create">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_r8ZMznj1Eemxj8C-8xluuw" name="PrimitiveType1"/>
+        <nestedClassifier xmi:type="uml:Interface" xmi:id="_r8ZMz3j1Eemxj8C-8xluuw" name="Interface1"/>
+        <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_r8ZM0Hj1Eemxj8C-8xluuw" name="Enumeration1"/>
+        <nestedClassifier xmi:type="uml:DataType" xmi:id="_r8ZM0Xj1Eemxj8C-8xluuw" name="DataType1"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_r8ZM0nj1Eemxj8C-8xluuw" name="Class1"/>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8aa4Hj1Eemxj8C-8xluuw" name="NotaSi">
+      <generalization xmi:type="uml:Generalization" xmi:id="_r8aa4Xj1Eemxj8C-8xluuw" general="_r8ghgHj1Eemxj8C-8xluuw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8aa4nj1Eemxj8C-8xluuw" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8aa43j1Eemxj8C-8xluuw" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8aa5Hj1Eemxj8C-8xluuw" name="NotaSi"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_r8aa5Xj1Eemxj8C-8xluuw" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_r8aa5nj1Eemxj8C-8xluuw" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_r8aa53j1Eemxj8C-8xluuw" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_r8aa6Hj1Eemxj8C-8xluuw" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_r8aa6Xj1Eemxj8C-8xluuw" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r8bB8Hj1Eemxj8C-8xluuw" memberEnd="_r8bB9Hj1Eemxj8C-8xluuw _r8bB83j1Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_r8bB8Xj1Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_r8bB8nj1Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8bB83j1Eemxj8C-8xluuw" type="_r8fTYHj1Eemxj8C-8xluuw" association="_r8bB8Hj1Eemxj8C-8xluuw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8bB9Hj1Eemxj8C-8xluuw" type="_hGdVUHhCEemfYIt1sDs4_Q" association="_r8bB8Hj1Eemxj8C-8xluuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r8bpAHj1Eemxj8C-8xluuw" memberEnd="_r8bpBHj1Eemxj8C-8xluuw _r8bpA3j1Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_r8bpAXj1Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_r8bpAnj1Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8bpA3j1Eemxj8C-8xluuw" type="_r8ghgHj1Eemxj8C-8xluuw" association="_r8bpAHj1Eemxj8C-8xluuw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8bpBHj1Eemxj8C-8xluuw" type="_r8WwgHj1Eemxj8C-8xluuw" aggregation="composite" association="_r8bpAHj1Eemxj8C-8xluuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r8bpBXj1Eemxj8C-8xluuw" memberEnd="_r8bpCXj1Eemxj8C-8xluuw _r8bpCHj1Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_r8bpBnj1Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_r8bpB3j1Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8bpCHj1Eemxj8C-8xluuw" type="_r8RQ8Hj1Eemxj8C-8xluuw" association="_r8bpBXj1Eemxj8C-8xluuw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8bpCXj1Eemxj8C-8xluuw" type="_r8fTYHj1Eemxj8C-8xluuw" association="_r8bpBXj1Eemxj8C-8xluuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r8c3IHj1Eemxj8C-8xluuw" name="controle" memberEnd="_r8c3JHj1Eemxj8C-8xluuw _r8c3I3j1Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_r8c3IXj1Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_r8c3Inj1Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8c3I3j1Eemxj8C-8xluuw" type="_r8WwgHj1Eemxj8C-8xluuw" association="_r8c3IHj1Eemxj8C-8xluuw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8c3JHj1Eemxj8C-8xluuw" type="_r8RQ8Hj1Eemxj8C-8xluuw" association="_r8c3IHj1Eemxj8C-8xluuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r8deMHj1Eemxj8C-8xluuw" memberEnd="_r8deNHj1Eemxj8C-8xluuw _r8deM3j1Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_r8deMXj1Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_r8deMnj1Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8deM3j1Eemxj8C-8xluuw" type="_r8YlsHj1Eemxj8C-8xluuw" association="_r8deMHj1Eemxj8C-8xluuw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8deNHj1Eemxj8C-8xluuw" type="_r8RQ8Hj1Eemxj8C-8xluuw" association="_r8deMHj1Eemxj8C-8xluuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r8eFQHj1Eemxj8C-8xluuw" memberEnd="_r8eFRHj1Eemxj8C-8xluuw _r8eFQ3j1Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_r8eFQXj1Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_r8eFQnj1Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8eFQ3j1Eemxj8C-8xluuw" type="_r8hvoHj1Eemxj8C-8xluuw" association="_r8eFQHj1Eemxj8C-8xluuw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8eFRHj1Eemxj8C-8xluuw" type="_r8RQ8Hj1Eemxj8C-8xluuw" association="_r8eFQHj1Eemxj8C-8xluuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8esUHj1Eemxj8C-8xluuw" name="NotaMi">
+      <generalization xmi:type="uml:Generalization" xmi:id="_r8esUXj1Eemxj8C-8xluuw" general="_r8ghgHj1Eemxj8C-8xluuw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8esUnj1Eemxj8C-8xluuw" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8esU3j1Eemxj8C-8xluuw" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8esVHj1Eemxj8C-8xluuw" name="NotaMi"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_r8esVXj1Eemxj8C-8xluuw" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_r8esVnj1Eemxj8C-8xluuw" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_r8esV3j1Eemxj8C-8xluuw" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_r8esWHj1Eemxj8C-8xluuw" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_r8esWXj1Eemxj8C-8xluuw" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8fTYHj1Eemxj8C-8xluuw" name="Tocador">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8fTYXj1Eemxj8C-8xluuw" name="Tocador"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8fTYnj1Eemxj8C-8xluuw" name="Tocador">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8fTY3j1Eemxj8C-8xluuw" name="melodia" type="_r8RQ8Hj1Eemxj8C-8xluuw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8fTZnj1Eemxj8C-8xluuw" name="play"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_r8fTZ3j1Eemxj8C-8xluuw" name="Interface"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8ghgHj1Eemxj8C-8xluuw" name="Nota">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_r8ghgnj1Eemxj8C-8xluuw" name="oitava" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rWpTkHvjEem_J8wQllDxXA" name="nota" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8ghg3j1Eemxj8C-8xluuw" name="Nota"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8ghhHj1Eemxj8C-8xluuw" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8ghhXj1Eemxj8C-8xluuw" name="umaNota" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r8hIkHj1Eemxj8C-8xluuw" memberEnd="_r8hIlHj1Eemxj8C-8xluuw _r8hIk3j1Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_r8hIkXj1Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_r8hIknj1Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8hIk3j1Eemxj8C-8xluuw" type="_r8kL4Hj1Eemxj8C-8xluuw" association="_r8hIkHj1Eemxj8C-8xluuw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r8hIlHj1Eemxj8C-8xluuw" type="_r8RQ8Hj1Eemxj8C-8xluuw" association="_r8hIkHj1Eemxj8C-8xluuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8hvoHj1Eemxj8C-8xluuw" name="Instrumento">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_r8hvonj1Eemxj8C-8xluuw" name="codigoInstrumento" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8hvo3j1Eemxj8C-8xluuw" name="Instrumento"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8hvpnj1Eemxj8C-8xluuw" name="novoInstrumento">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8hvp3j1Eemxj8C-8xluuw" name="umInstrumento" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8hvqHj1Eemxj8C-8xluuw" name="lerInstrumento">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8hvqXj1Eemxj8C-8xluuw" name="umInstrumento" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Cw068HkDEemxj8C-8xluuw" name="reinicia"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_OrUXAHkDEemxj8C-8xluuw" name="ehValido"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8iWsHj1Eemxj8C-8xluuw" name="NotaLa">
+      <generalization xmi:type="uml:Generalization" xmi:id="_r8iWsXj1Eemxj8C-8xluuw" general="_r8ghgHj1Eemxj8C-8xluuw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8iWsnj1Eemxj8C-8xluuw" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8iWs3j1Eemxj8C-8xluuw" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8iWtHj1Eemxj8C-8xluuw" name="NotaLa"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_r8iWtXj1Eemxj8C-8xluuw" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_r8iWtnj1Eemxj8C-8xluuw" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_r8iWt3j1Eemxj8C-8xluuw" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_r8iWuHj1Eemxj8C-8xluuw" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_r8iWuXj1Eemxj8C-8xluuw" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8i9wHj1Eemxj8C-8xluuw" name="NotaSol">
+      <generalization xmi:type="uml:Generalization" xmi:id="_r8i9wXj1Eemxj8C-8xluuw" general="_r8ghgHj1Eemxj8C-8xluuw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8i9wnj1Eemxj8C-8xluuw" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8i9w3j1Eemxj8C-8xluuw" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8i9xHj1Eemxj8C-8xluuw" name="NotaSol"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_r8i9xXj1Eemxj8C-8xluuw" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_r8i9xnj1Eemxj8C-8xluuw" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_r8i9x3j1Eemxj8C-8xluuw" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_r8i9yHj1Eemxj8C-8xluuw" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_r8i9yXj1Eemxj8C-8xluuw" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r8kL4Hj1Eemxj8C-8xluuw" name="Volume">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_r8kL4nj1Eemxj8C-8xluuw" name="atual" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8kL53j1Eemxj8C-8xluuw" name="Volume">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8kL6Hj1Eemxj8C-8xluuw" name="ehIncrementa">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8kL6Xj1Eemxj8C-8xluuw" name="lerVolume">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8kL6nj1Eemxj8C-8xluuw" name="umVolume" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8kL63j1Eemxj8C-8xluuw" name="diminui"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8kL7Xj1Eemxj8C-8xluuw" name="aumentar"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8kL73j1Eemxj8C-8xluuw" name="reinicia"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8kL8Xj1Eemxj8C-8xluuw" name="ehValido">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8kL8nj1Eemxj8C-8xluuw" name="ehValido" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_r8kL83j1Eemxj8C-8xluuw" name="Parametros"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-yGVMHj6Eemxj8C-8xluuw" memberEnd="_-yIxcHj6Eemxj8C-8xluuw _-yJYgHj6Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-yIKYHj6Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-yIKYXj6Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-yJYgHj6Eemxj8C-8xluuw" type="_r8TGIHj1Eemxj8C-8xluuw" association="_-yGVMHj6Eemxj8C-8xluuw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_14PN4HqBEemam-8madTT3Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14VUgHqBEemam-8madTT3Q" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-yIxcHj6Eemxj8C-8xluuw" type="_r8RQ8Hj1Eemxj8C-8xluuw" association="_-yGVMHj6Eemxj8C-8xluuw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w0N6YHqBEemam-8madTT3Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w0RkwHqBEemam-8madTT3Q" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UHRjAHj7Eemxj8C-8xluuw" memberEnd="_UHRjA3j7Eemxj8C-8xluuw _UHRjBHj7Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UHRjAXj7Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UHRjAnj7Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_UHRjBHj7Eemxj8C-8xluuw" type="_r8ZMwHj1Eemxj8C-8xluuw" association="_UHRjAHj7Eemxj8C-8xluuw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_53FCAHqBEemam-8madTT3Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_53GQIHqBEemam-8madTT3Q" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_UHRjA3j7Eemxj8C-8xluuw" type="_r8RQ8Hj1Eemxj8C-8xluuw" association="_UHRjAHj7Eemxj8C-8xluuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ys7fgHj7Eemxj8C-8xluuw" memberEnd="_Ys7fg3j7Eemxj8C-8xluuw _Ys7fhHj7Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ys7fgXj7Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ys7fgnj7Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ys7fhHj7Eemxj8C-8xluuw" type="_r8esUHj1Eemxj8C-8xluuw" association="_Ys7fgHj7Eemxj8C-8xluuw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7CE1gHqBEemam-8madTT3Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7CE1gXqBEemam-8madTT3Q" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ys7fg3j7Eemxj8C-8xluuw" type="_r8RQ8Hj1Eemxj8C-8xluuw" association="_Ys7fgHj7Eemxj8C-8xluuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_sH6RgHj7Eemxj8C-8xluuw" memberEnd="_sH64kXj7Eemxj8C-8xluuw _sH64knj7Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sH6RgXj7Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sH64kHj7Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_sH64knj7Eemxj8C-8xluuw" type="_r8TtMHj1Eemxj8C-8xluuw" association="_sH6RgHj7Eemxj8C-8xluuw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8O84UHqBEemam-8madTT3Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8O-GcHqBEemam-8madTT3Q" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_sH64kXj7Eemxj8C-8xluuw" type="_r8RQ8Hj1Eemxj8C-8xluuw" association="_sH6RgHj7Eemxj8C-8xluuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_0HLOIHj7Eemxj8C-8xluuw" memberEnd="_0HMcQnj7Eemxj8C-8xluuw _0HNDUHj7Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0HMcQHj7Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0HMcQXj7Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_0HNDUHj7Eemxj8C-8xluuw" type="_r8i9wHj1Eemxj8C-8xluuw" association="_0HLOIHj7Eemxj8C-8xluuw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9IH8AHqBEemam-8madTT3Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9IJxMHqBEemam-8madTT3Q" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_0HMcQnj7Eemxj8C-8xluuw" type="_r8RQ8Hj1Eemxj8C-8xluuw" association="_0HLOIHj7Eemxj8C-8xluuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8nKSMHj7Eemxj8C-8xluuw" memberEnd="_8nMHYHj7Eemxj8C-8xluuw _8nMucHj7Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8nLgUHj7Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8nLgUXj7Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_8nMucHj7Eemxj8C-8xluuw" type="_r8iWsHj1Eemxj8C-8xluuw" association="_8nKSMHj7Eemxj8C-8xluuw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-AzQcHqBEemam-8madTT3Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-A1FoHqBEemam-8madTT3Q" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_8nMHYHj7Eemxj8C-8xluuw" type="_r8RQ8Hj1Eemxj8C-8xluuw" association="_8nKSMHj7Eemxj8C-8xluuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-9PYwHj7Eemxj8C-8xluuw" memberEnd="_-9R1AHj7Eemxj8C-8xluuw _-9ScEHj7Eemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-9Qm4Hj7Eemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-9RN8Hj7Eemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-9ScEHj7Eemxj8C-8xluuw" type="_r8aa4Hj1Eemxj8C-8xluuw" association="_-9PYwHj7Eemxj8C-8xluuw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BXF20HqCEemam-8madTT3Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BXHsAHqCEemam-8madTT3Q" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-9R1AHj7Eemxj8C-8xluuw" type="_r8RQ8Hj1Eemxj8C-8xluuw" association="_-9PYwHj7Eemxj8C-8xluuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iefUoHkFEemxj8C-8xluuw" name="Interface">
+      <generalization xmi:type="uml:Generalization" xmi:id="_iefUoXkFEemxj8C-8xluuw" general="_r8ghgHj1Eemxj8C-8xluuw"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_iefUpXkFEemxj8C-8xluuw" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_iefUpnkFEemxj8C-8xluuw" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_iefUp3kFEemxj8C-8xluuw" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_iefUqHkFEemxj8C-8xluuw" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_iefUqXkFEemxj8C-8xluuw" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oLesoHkFEemxj8C-8xluuw" memberEnd="_oLgh0HkFEemxj8C-8xluuw _oLhI4HkFEemxj8C-8xluuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oLf6wHkFEemxj8C-8xluuw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oLf6wXkFEemxj8C-8xluuw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_oLhI4HkFEemxj8C-8xluuw" type="_iefUoHkFEemxj8C-8xluuw" association="_oLesoHkFEemxj8C-8xluuw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_oLgh0HkFEemxj8C-8xluuw" type="_r8fTYHj1Eemxj8C-8xluuw" association="_oLesoHkFEemxj8C-8xluuw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FLEewHqCEemam-8madTT3Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FLLMcHqCEemam-8madTT3Q" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_VdmmUHkHEemxj8C-8xluuw" name="Cofiguracao">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mGOlcHkHEemxj8C-8xluuw" name="ehValido">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ImKCYHp-Eemam-8madTT3Q" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_rf1ucHkHEemxj8C-8xluuw" name="reinicia"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_j8PG4Hp3Eemam-8madTT3Q" name="AlteraConfiguracao">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_j8PG4Xp3Eemam-8madTT3Q" name="aumenta"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_j8PG4np3Eemam-8madTT3Q" name="diminui"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_dlGQgHs5Eem2qYtNS3Z9cQ" client="_r8WwgHj1Eemxj8C-8xluuw" supplier="_VdmmUHkHEemxj8C-8xluuw"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_g0jPEHs5Eem2qYtNS3Z9cQ" client="_r8WwgHj1Eemxj8C-8xluuw" supplier="_j8PG4Hp3Eemam-8madTT3Q"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_l9F2MHs5Eem2qYtNS3Z9cQ" client="_r8kL4Hj1Eemxj8C-8xluuw" supplier="_VdmmUHkHEemxj8C-8xluuw"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_pzQ2gHs5Eem2qYtNS3Z9cQ" client="_r8kL4Hj1Eemxj8C-8xluuw" supplier="_j8PG4Hp3Eemam-8madTT3Q"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_xjM9sHs5Eem2qYtNS3Z9cQ" client="_r8hvoHj1Eemxj8C-8xluuw" supplier="_-I5O4Hj0Eemxj8C-8xluuw"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_5IcQwHs5Eem2qYtNS3Z9cQ" client="_r8YlsHj1Eemxj8C-8xluuw" supplier="_VdmmUHkHEemxj8C-8xluuw"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_esIfIHs7Eem2qYtNS3Z9cQ" client="_r8YlsHj1Eemxj8C-8xluuw" supplier="_j8PG4Hp3Eemam-8madTT3Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_aYxcoHt0EemwfpnZh8YyZA" name="classDiagram_parte2Opcional">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_N5c_wHt1EemwfpnZh8YyZA" client="_aYxcoHt0EemwfpnZh8YyZA" supplier="_N5pNAHt1EemwfpnZh8YyZA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5dm0Ht1EemwfpnZh8YyZA" name="Interface">
+      <generalization xmi:type="uml:Generalization" xmi:id="_N5dm0Xt1EemwfpnZh8YyZA" general="_N5jtcHt1EemwfpnZh8YyZA"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_N5dm0nt1EemwfpnZh8YyZA" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_N5dm03t1EemwfpnZh8YyZA" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_N5dm1Ht1EemwfpnZh8YyZA" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_N5dm1Xt1EemwfpnZh8YyZA" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_N5dm1nt1EemwfpnZh8YyZA" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_N5gDEHt1EemwfpnZh8YyZA" name="controle" memberEnd="_N5gDFHt1EemwfpnZh8YyZA _N5gDE3t1EemwfpnZh8YyZA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N5gDEXt1EemwfpnZh8YyZA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N5gDEnt1EemwfpnZh8YyZA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_N5gDE3t1EemwfpnZh8YyZA" type="_N5uFgHt1EemwfpnZh8YyZA" association="_N5gDEHt1EemwfpnZh8YyZA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_N5gDFHt1EemwfpnZh8YyZA" type="_N5h4QHt1EemwfpnZh8YyZA" association="_N5gDEHt1EemwfpnZh8YyZA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5gDFXt1EemwfpnZh8YyZA" name="Volume">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_N5gDFnt1EemwfpnZh8YyZA" name="atual" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5gDF3t1EemwfpnZh8YyZA" name="Volume">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5gDGHt1EemwfpnZh8YyZA" name="ehIncrementa">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5gDGXt1EemwfpnZh8YyZA" name="lerVolume">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5gDGnt1EemwfpnZh8YyZA" name="umVolume" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5gDG3t1EemwfpnZh8YyZA" name="diminui"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5gDHHt1EemwfpnZh8YyZA" name="aumentar"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5gDHXt1EemwfpnZh8YyZA" name="reinicia"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5gDHnt1EemwfpnZh8YyZA" name="ehValido">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5gDH3t1EemwfpnZh8YyZA" name="ehValido" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_N5gDIHt1EemwfpnZh8YyZA" name="Parametros"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_N5hRMHt1EemwfpnZh8YyZA" memberEnd="_N5hRNHt1EemwfpnZh8YyZA _N5hRM3t1EemwfpnZh8YyZA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N5hRMXt1EemwfpnZh8YyZA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N5hRMnt1EemwfpnZh8YyZA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_N5hRM3t1EemwfpnZh8YyZA" type="_N5jtcHt1EemwfpnZh8YyZA" association="_N5hRMHt1EemwfpnZh8YyZA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_N5hRNHt1EemwfpnZh8YyZA" type="_N5uFgHt1EemwfpnZh8YyZA" aggregation="composite" association="_N5hRMHt1EemwfpnZh8YyZA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5h4QHt1EemwfpnZh8YyZA" name="Musica">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_N5h4QXt1EemwfpnZh8YyZA" name="umaMusica" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N5h4Qnt1EemwfpnZh8YyZA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N5h4Q3t1EemwfpnZh8YyZA" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5h4RHt1EemwfpnZh8YyZA" name="Musica">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5h4RXt1EemwfpnZh8YyZA" name="texto">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5h4Rnt1EemwfpnZh8YyZA" name="Musica">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5h4R3t1EemwfpnZh8YyZA" name="melodia" type="_N5h4QHt1EemwfpnZh8YyZA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5h4SHt1EemwfpnZh8YyZA" name="tocaMusica">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5h4SXt1EemwfpnZh8YyZA" name="umaMusica" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5h4Snt1EemwfpnZh8YyZA" name="decodificador()">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5h4S3t1EemwfpnZh8YyZA" name="texto">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_N5ifUHt1EemwfpnZh8YyZA" client="_aYxcoHt0EemwfpnZh8YyZA" supplier="_aYxcoHt0EemwfpnZh8YyZA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5ifUXt1EemwfpnZh8YyZA" name="NotaSol">
+      <generalization xmi:type="uml:Generalization" xmi:id="_N5ifUnt1EemwfpnZh8YyZA" general="_N5jtcHt1EemwfpnZh8YyZA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5ifU3t1EemwfpnZh8YyZA" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5ifVHt1EemwfpnZh8YyZA" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5ifVXt1EemwfpnZh8YyZA" name="NotaSol"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_N5ifVnt1EemwfpnZh8YyZA" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_N5ifV3t1EemwfpnZh8YyZA" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_N5ifWHt1EemwfpnZh8YyZA" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_N5ifWXt1EemwfpnZh8YyZA" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_N5ifWnt1EemwfpnZh8YyZA" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5jGYHt1EemwfpnZh8YyZA" name="NotaFa">
+      <generalization xmi:type="uml:Generalization" xmi:id="_N5jGYXt1EemwfpnZh8YyZA" general="_N5jtcHt1EemwfpnZh8YyZA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5jGYnt1EemwfpnZh8YyZA" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5jGY3t1EemwfpnZh8YyZA" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5jGZHt1EemwfpnZh8YyZA" name="NotaFa"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_N5jGZXt1EemwfpnZh8YyZA" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_N5jGZnt1EemwfpnZh8YyZA" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_N5jGZ3t1EemwfpnZh8YyZA" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_N5jGaHt1EemwfpnZh8YyZA" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_N5jGaXt1EemwfpnZh8YyZA" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5jtcHt1EemwfpnZh8YyZA" name="Nota">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_N5jtcXt1EemwfpnZh8YyZA" name="oitava" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_98-qEHt2EemwfpnZh8YyZA" name="Nota" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5jtcnt1EemwfpnZh8YyZA" name="Nota"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5jtc3t1EemwfpnZh8YyZA" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5jtdHt1EemwfpnZh8YyZA" name="umaNota" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5k7kHt1EemwfpnZh8YyZA" name="Ritmo">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_N5k7kXt1EemwfpnZh8YyZA" name="atual" visibility="private" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5k7knt1EemwfpnZh8YyZA" name="Ritmo">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5k7k3t1EemwfpnZh8YyZA" name="ehIncrementa">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5k7lHt1EemwfpnZh8YyZA" name="lerRitmo">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5k7lXt1EemwfpnZh8YyZA" name="umTempo" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5k7lnt1EemwfpnZh8YyZA" name="aumenta"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5k7l3t1EemwfpnZh8YyZA" name="diminui"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5k7mHt1EemwfpnZh8YyZA" name="ehValido">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5k7mXt1EemwfpnZh8YyZA" name="ehValido" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5k7mnt1EemwfpnZh8YyZA" name="reinicia"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_N5lioHt1EemwfpnZh8YyZA" memberEnd="_N5lipHt1EemwfpnZh8YyZA _N5lio3t1EemwfpnZh8YyZA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N5lioXt1EemwfpnZh8YyZA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N5liont1EemwfpnZh8YyZA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_N5lio3t1EemwfpnZh8YyZA" type="_N5dm0Ht1EemwfpnZh8YyZA" association="_N5lioHt1EemwfpnZh8YyZA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_N5lipHt1EemwfpnZh8YyZA" type="_N5n-4Ht1EemwfpnZh8YyZA" association="_N5lioHt1EemwfpnZh8YyZA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N5lipXt1EemwfpnZh8YyZA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N5lipnt1EemwfpnZh8YyZA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5mJsHt1EemwfpnZh8YyZA" name="NotaLa">
+      <generalization xmi:type="uml:Generalization" xmi:id="_N5mJsXt1EemwfpnZh8YyZA" general="_N5jtcHt1EemwfpnZh8YyZA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5mJsnt1EemwfpnZh8YyZA" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5mJs3t1EemwfpnZh8YyZA" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5mJtHt1EemwfpnZh8YyZA" name="NotaLa"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_N5mJtXt1EemwfpnZh8YyZA" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_N5mJtnt1EemwfpnZh8YyZA" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_N5mJt3t1EemwfpnZh8YyZA" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_N5mJuHt1EemwfpnZh8YyZA" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_N5mJuXt1EemwfpnZh8YyZA" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_N5mwwHt1EemwfpnZh8YyZA" client="_N5k7kHt1EemwfpnZh8YyZA" supplier="_N5pNAHt1EemwfpnZh8YyZA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5mwwXt1EemwfpnZh8YyZA" name="Instrumento">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_N5mwwnt1EemwfpnZh8YyZA" name="codigoInstrumento" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5mww3t1EemwfpnZh8YyZA" name="Instrumento"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5mwxHt1EemwfpnZh8YyZA" name="novoInstrumento">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5mwxXt1EemwfpnZh8YyZA" name="umInstrumento" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5mwxnt1EemwfpnZh8YyZA" name="lerInstrumento">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5mwx3t1EemwfpnZh8YyZA" name="umInstrumento" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5mwyHt1EemwfpnZh8YyZA" name="reinicia"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5mwyXt1EemwfpnZh8YyZA" name="ehValido"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5n-4Ht1EemwfpnZh8YyZA" name="Tocador">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5n-4Xt1EemwfpnZh8YyZA" name="Tocador"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5n-4nt1EemwfpnZh8YyZA" name="Tocador">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5n-43t1EemwfpnZh8YyZA" name="melodia" type="_N5h4QHt1EemwfpnZh8YyZA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5n-5Ht1EemwfpnZh8YyZA" name="play"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_N5n-5Xt1EemwfpnZh8YyZA" name="Interface"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5ol8Ht1EemwfpnZh8YyZA" name="NotaDo">
+      <generalization xmi:type="uml:Generalization" xmi:id="_N5ol8Xt1EemwfpnZh8YyZA" general="_N5jtcHt1EemwfpnZh8YyZA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5ol8nt1EemwfpnZh8YyZA" name="NotaDo"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5ol83t1EemwfpnZh8YyZA" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5ol9Ht1EemwfpnZh8YyZA" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_N5ol9Xt1EemwfpnZh8YyZA" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_N5ol9nt1EemwfpnZh8YyZA" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_N5ol93t1EemwfpnZh8YyZA" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_N5ol-Ht1EemwfpnZh8YyZA" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_N5ol-Xt1EemwfpnZh8YyZA" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_N5pNAHt1EemwfpnZh8YyZA" name="AlteraConfiguracao">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5pNAXt1EemwfpnZh8YyZA" name="aumenta"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5pNAnt1EemwfpnZh8YyZA" name="diminui"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_N5pNA3t1EemwfpnZh8YyZA" client="_N5mwwXt1EemwfpnZh8YyZA" supplier="_-I5O4Hj0Eemxj8C-8xluuw"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_N5p0EHt1EemwfpnZh8YyZA" client="_N5gDFXt1EemwfpnZh8YyZA" supplier="_aYxcoHt0EemwfpnZh8YyZA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5p0EXt1EemwfpnZh8YyZA" name="NotaRe">
+      <generalization xmi:type="uml:Generalization" xmi:id="_N5p0Ent1EemwfpnZh8YyZA" general="_N5jtcHt1EemwfpnZh8YyZA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5p0E3t1EemwfpnZh8YyZA" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5p0FHt1EemwfpnZh8YyZA" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5p0FXt1EemwfpnZh8YyZA" name="NotaRe"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_N5p0Fnt1EemwfpnZh8YyZA" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_N5p0F3t1EemwfpnZh8YyZA" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_N5p0GHt1EemwfpnZh8YyZA" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_N5p0GXt1EemwfpnZh8YyZA" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_N5p0Gnt1EemwfpnZh8YyZA" name="Class1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_N5p0G3t1EemwfpnZh8YyZA" name="NotaDo">
+        <generalization xmi:type="uml:Generalization" xmi:id="_N5p0HHt1EemwfpnZh8YyZA" general="_N5jtcHt1EemwfpnZh8YyZA"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_N5p0HXt1EemwfpnZh8YyZA" name="lerNota">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5p0Hnt1EemwfpnZh8YyZA" direction="return" effect="create">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_N5p0H3t1EemwfpnZh8YyZA" name="PrimitiveType1"/>
+        <nestedClassifier xmi:type="uml:Interface" xmi:id="_N5p0IHt1EemwfpnZh8YyZA" name="Interface1"/>
+        <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_N5p0IXt1EemwfpnZh8YyZA" name="Enumeration1"/>
+        <nestedClassifier xmi:type="uml:DataType" xmi:id="_N5p0Int1EemwfpnZh8YyZA" name="DataType1"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_N5p0I3t1EemwfpnZh8YyZA" name="Class1"/>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_N5rCMHt1EemwfpnZh8YyZA" client="_N5uFgHt1EemwfpnZh8YyZA" supplier="_N5sQUHt1EemwfpnZh8YyZA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5rpQHt1EemwfpnZh8YyZA" name="NotaSi">
+      <generalization xmi:type="uml:Generalization" xmi:id="_N5rpQXt1EemwfpnZh8YyZA" general="_N5jtcHt1EemwfpnZh8YyZA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5rpQnt1EemwfpnZh8YyZA" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5rpQ3t1EemwfpnZh8YyZA" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5rpRHt1EemwfpnZh8YyZA" name="NotaSi"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_N5rpRXt1EemwfpnZh8YyZA" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_N5rpRnt1EemwfpnZh8YyZA" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_N5rpR3t1EemwfpnZh8YyZA" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_N5rpSHt1EemwfpnZh8YyZA" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_N5rpSXt1EemwfpnZh8YyZA" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_N5sQUHt1EemwfpnZh8YyZA" name="Cofiguracao">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5sQUXt1EemwfpnZh8YyZA" name="ehValido">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5sQUnt1EemwfpnZh8YyZA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5sQU3t1EemwfpnZh8YyZA" name="reinicia"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5uFgHt1EemwfpnZh8YyZA" name="Oitava">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_N5uFgXt1EemwfpnZh8YyZA" name="nivelDeClasse" visibility="private" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_N5uFgnt1EemwfpnZh8YyZA" name="valorInstancia" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5uFg3t1EemwfpnZh8YyZA" name="Oitava"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5uFhHt1EemwfpnZh8YyZA" name="Oitava">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5uFhXt1EemwfpnZh8YyZA" name="modificaOitava">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5uFhnt1EemwfpnZh8YyZA" name="aumenta"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5uFh3t1EemwfpnZh8YyZA" name="diminui"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5uFiHt1EemwfpnZh8YyZA" name="reinicia"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5uFiXt1EemwfpnZh8YyZA" name="ehValida">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5uFint1EemwfpnZh8YyZA" name="ehValida" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5uFi3t1EemwfpnZh8YyZA" name="lerOitava">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5uFjHt1EemwfpnZh8YyZA" name="umaOitava" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_N5vToHt1EemwfpnZh8YyZA" client="_N5k7kHt1EemwfpnZh8YyZA" supplier="_N5sQUHt1EemwfpnZh8YyZA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N5vToXt1EemwfpnZh8YyZA" name="NotaMi">
+      <generalization xmi:type="uml:Generalization" xmi:id="_N5vTont1EemwfpnZh8YyZA" general="_N5jtcHt1EemwfpnZh8YyZA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5vTo3t1EemwfpnZh8YyZA" name="lerNota">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N5v6sHt1EemwfpnZh8YyZA" direction="return" effect="create">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N5v6sXt1EemwfpnZh8YyZA" name="NotaMi"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_N5v6snt1EemwfpnZh8YyZA" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_N5v6s3t1EemwfpnZh8YyZA" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_N5v6tHt1EemwfpnZh8YyZA" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_N5v6tXt1EemwfpnZh8YyZA" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_N5v6tnt1EemwfpnZh8YyZA" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_N5whwHt1EemwfpnZh8YyZA" memberEnd="_N5whxHt1EemwfpnZh8YyZA _N5whw3t1EemwfpnZh8YyZA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N5whwXt1EemwfpnZh8YyZA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N5whwnt1EemwfpnZh8YyZA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_N5whw3t1EemwfpnZh8YyZA" type="_N5h4QHt1EemwfpnZh8YyZA" association="_N5whwHt1EemwfpnZh8YyZA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_N5whxHt1EemwfpnZh8YyZA" type="_N5n-4Ht1EemwfpnZh8YyZA" association="_N5whwHt1EemwfpnZh8YyZA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_1t1eYHt2EemwfpnZh8YyZA" name="ValorMusical">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1t1eY3t2EemwfpnZh8YyZA" name="lerValor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Y18QkHt3EemwfpnZh8YyZA" client="_N5jtcHt1EemwfpnZh8YyZA" supplier="_1t1eYHt2EemwfpnZh8YyZA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ejN8cHt3EemwfpnZh8YyZA" memberEnd="_ejQYsHt3EemwfpnZh8YyZA _ejSN4Ht3EemwfpnZh8YyZA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ejPKkHt3EemwfpnZh8YyZA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ejPxoHt3EemwfpnZh8YyZA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ejSN4Ht3EemwfpnZh8YyZA" type="_1t1eYHt2EemwfpnZh8YyZA" association="_ejN8cHt3EemwfpnZh8YyZA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l9WywHt3EemwfpnZh8YyZA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l9ZPAHt3EemwfpnZh8YyZA" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ejQYsHt3EemwfpnZh8YyZA" type="_N5h4QHt1EemwfpnZh8YyZA" association="_ejN8cHt3EemwfpnZh8YyZA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jdO_YHt3EemwfpnZh8YyZA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jdVGAHt3EemwfpnZh8YyZA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_8Bzr8Ht4EemwfpnZh8YyZA" client="_N5gDFXt1EemwfpnZh8YyZA" supplier="_aYxcoHt0EemwfpnZh8YyZA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_AqhjgHt5EemwfpnZh8YyZA" client="_N5mwwXt1EemwfpnZh8YyZA" supplier="_1t1eYHt2EemwfpnZh8YyZA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_D1wwcHt5EemwfpnZh8YyZA" client="_N5k7kHt1EemwfpnZh8YyZA" supplier="_1t1eYHt2EemwfpnZh8YyZA"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_EnM9EHhbEemSMK_ZCOIU2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EnOyQHhbEemSMK_ZCOIU2w" source="PapyrusVersion">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EnOyQXhbEemSMK_ZCOIU2w" key="Version" value="0.1.1"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EnOyQnhbEemSMK_ZCOIU2w" key="Comment" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EnOyQ3hbEemSMK_ZCOIU2w" key="Copyright" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EnOyRHhbEemSMK_ZCOIU2w" key="Date" value="2015-01-21"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EnOyRXhbEemSMK_ZCOIU2w" key="Author" value=""/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EnNkIHhbEemSMK_ZCOIU2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bGFk8HhbEemSMK_ZCOIU2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bGGzEHhbEemSMK_ZCOIU2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Model>
