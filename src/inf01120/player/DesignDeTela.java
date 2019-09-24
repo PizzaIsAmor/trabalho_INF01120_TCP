@@ -17,7 +17,8 @@ import javax.swing.JTabbedPane;
 import javax.swing.JTextArea;
 
 public class DesignDeTela {
-
+	private JTextArea guardaTexto = this.addTexto( );
+	
 	private JMenuItem addMenuItem( String nome ) {
 		return new JMenuItem( nome );
 	}
@@ -42,7 +43,7 @@ public class DesignDeTela {
 	private JPanel addAreaTexto( ) {
 		JPanel novaTab = new JPanel( new BorderLayout(3, 3) ); 
 		
-		novaTab.add(this.addTexto( ), BorderLayout.CENTER);
+		novaTab.add(this.guardaTexto, BorderLayout.CENTER);
 		novaTab.add(this.addEspacoVazio( ), BorderLayout.NORTH);
 		novaTab.add(this.addEspacoVazio( ), BorderLayout.SOUTH);
 		novaTab.add(this.addEspacoVazio( ), BorderLayout.EAST);
@@ -99,10 +100,19 @@ public class DesignDeTela {
 	public Component constroiBotoes() {
 		Container botoes = new JPanel( new GridLayout(0, 4, 5, 10) );
 		
-		botoes.add( this.addBotao( DadosInterface.BOTAO_ARQUIVO), 0, 0);
+		JButton play = this.addBotao( DadosInterface.BOTAO_PLAY);
+		play.addActionListener( new ActionListenerTocador(this.guardaTexto)	);
+		
+		JButton abrir = this.addBotao( DadosInterface.BOTAO_ARQUIVO);
+		abrir.addActionListener( new ActionListenerAbrir(this.guardaTexto) );
+		
+		JButton salvar = this.addBotao( DadosInterface.BOTAO_SALVAR);
+		salvar.addActionListener( new ActionListenerSalvar(this.guardaTexto) );
+		
+		botoes.add( abrir, 0, 0);
 		botoes.add( this.addEspacoVazio( ), 0, 1);
-		botoes.add( this.addBotao( DadosInterface.BOTAO_SALVAR), 0, 2);
-		botoes.add( this.addBotao( DadosInterface.BOTAO_PLAY), 0, 3);
+		botoes.add( salvar, 0, 2);
+		botoes.add( play, 0, 3);
 		
 		return botoes;
 	}
@@ -110,8 +120,7 @@ public class DesignDeTela {
 	public Component constroiAreaTexto( ) {
 		JTabbedPane abas = new JTabbedPane();
 		
-		abas.add("Nova música", this.addAreaTexto( ));
-		abas.add("+", this.addAreaTexto( ));
+		abas.add("Area de Texto 1", this.addAreaTexto( ));
 		
 		return abas;
 	}

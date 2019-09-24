@@ -2,6 +2,7 @@ package inf01120.player;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
+
 import javax.swing.*;
 import inf01120.player.DesignDeTela;
 

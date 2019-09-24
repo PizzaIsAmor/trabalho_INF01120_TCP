@@ -4,33 +4,36 @@ public class Oitava {
 	private static final int DEFAULT = 5;
 	private static final int MAXIMO = 10;
 	private static final int MINIMO = 0;
-	private static int oitavaAtual = Oitava.DEFAULT;
+	private static int controleDeOitava = Oitava.DEFAULT;
+	private int oitava;
 	
-	Oitava( ){}
+	Oitava( ){
+		this.oitava = Oitava.controleDeOitava;
+	}
 	
 	public int lerOitava( ){
-		return Oitava.oitavaAtual;
+		return this.oitava;
 	}
 	
-	public int aumentaOitava( ){
-		if(Oitava.oitavaAtual <= Oitava.MAXIMO){
-			Oitava.oitavaAtual++;
-		}
-		
-		return Oitava.oitavaAtual;
+	public void aumenta( ){
+		if( noIntervaloValido() )
+			Oitava.controleDeOitava++;
+		else
+			this.reiniciaControleDeOitava();
 	}
 	
-	public int diminuiOitava( ){
-		if(Oitava.oitavaAtual >= Oitava.MINIMO){
-			Oitava.oitavaAtual--;
-		}
-		
-		return Oitava.oitavaAtual;
+	public void diminui( ){
+		if( noIntervaloValido() )
+			Oitava.controleDeOitava--;
+		else
+			this.reiniciaControleDeOitava();
 	}
 	
-	public int reiniciaOitava( ){
-		Oitava.oitavaAtual = Oitava.DEFAULT;
-
-		return Oitava.oitavaAtual;
+	private boolean noIntervaloValido(){
+		return Oitava.MINIMO < Oitava.controleDeOitava && Oitava.controleDeOitava < Oitava.MAXIMO;
+	}
+	
+	public void reiniciaControleDeOitava( ){
+		Oitava.controleDeOitava = Oitava.DEFAULT;
 	}
 }

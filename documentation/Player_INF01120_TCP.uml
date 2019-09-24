@@ -466,7 +466,7 @@
       <ownedOperation xmi:type="uml:Operation" xmi:id="_r8R4Anj1Eemxj8C-8xluuw" name="Musica">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8R4A3j1Eemxj8C-8xluuw" name="melodia" type="_r8RQ8Hj1Eemxj8C-8xluuw"/>
       </ownedOperation>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8R4Bnj1Eemxj8C-8xluuw" name="tocaMusica">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8R4Bnj1Eemxj8C-8xluuw" name="lerMusica">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8R4B3j1Eemxj8C-8xluuw" name="umaMusica" direction="return">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
@@ -521,7 +521,7 @@
       <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Wwh3j1Eemxj8C-8xluuw" name="aumenta"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_r8WwiXj1Eemxj8C-8xluuw" name="diminui"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Wwi3j1Eemxj8C-8xluuw" name="reinicia"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8WwjXj1Eemxj8C-8xluuw" name="ehValida">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8WwjXj1Eemxj8C-8xluuw" name="ehValida" visibility="private">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8Wwjnj1Eemxj8C-8xluuw" name="ehValida" direction="return">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
@@ -536,11 +536,7 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_r8Ylsnj1Eemxj8C-8xluuw" name="atual" visibility="private" isStatic="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </ownedAttribute>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Ylt3j1Eemxj8C-8xluuw" name="Ritmo">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8YluHj1Eemxj8C-8xluuw" name="ehIncrementa">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-        </ownedParameter>
-      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Ylt3j1Eemxj8C-8xluuw" name="Ritmo"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_r8YluXj1Eemxj8C-8xluuw" name="lerRitmo">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8Ylunj1Eemxj8C-8xluuw" name="umTempo" direction="return">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -548,12 +544,12 @@
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Ylu3j1Eemxj8C-8xluuw" name="aumenta"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_r8YlvXj1Eemxj8C-8xluuw" name="diminui"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Ylv3j1Eemxj8C-8xluuw" name="ehValido">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8Ylv3j1Eemxj8C-8xluuw" name="ehValido" visibility="private">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8YlwHj1Eemxj8C-8xluuw" name="ehValido" direction="return">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8YlwXj1Eemxj8C-8xluuw" name="reinicia"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8YlwXj1Eemxj8C-8xluuw" name="reinicia" visibility="private"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_r8ZMwHj1Eemxj8C-8xluuw" name="NotaRe">
       <generalization xmi:type="uml:Generalization" xmi:id="_r8ZMwXj1Eemxj8C-8xluuw" general="_r8ghgHj1Eemxj8C-8xluuw"/>
@@ -687,8 +683,8 @@
       </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_r8hvo3j1Eemxj8C-8xluuw" name="Instrumento"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_r8hvpnj1Eemxj8C-8xluuw" name="novoInstrumento">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8hvp3j1Eemxj8C-8xluuw" name="umInstrumento" direction="return">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_q0ZRYJbaEemA1c-FEZl4Aw" name="intervaloDeTroca">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_r8hvqHj1Eemxj8C-8xluuw" name="lerInstrumento">
@@ -696,8 +692,12 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_Cw068HkDEemxj8C-8xluuw" name="reinicia"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_OrUXAHkDEemxj8C-8xluuw" name="ehValido"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Cw068HkDEemxj8C-8xluuw" name="reinicia" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_OrUXAHkDEemxj8C-8xluuw" name="ehValido" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nt4B0JbZEemA1c-FEZl4Aw" name="setHarpsichord"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_yBGlIJbZEemA1c-FEZl4Aw" name="setTubularBells"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1btDwJbZEemA1c-FEZl4Aw" name="setPanFlute"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_40Q7AJbZEemA1c-FEZl4Aw" name="setChurchOrgan"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_r8iWsHj1Eemxj8C-8xluuw" name="NotaLa">
       <generalization xmi:type="uml:Generalization" xmi:id="_r8iWsXj1Eemxj8C-8xluuw" general="_r8ghgHj1Eemxj8C-8xluuw"/>
@@ -743,12 +743,13 @@
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_r8kL63j1Eemxj8C-8xluuw" name="diminui"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_r8kL7Xj1Eemxj8C-8xluuw" name="aumentar"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8kL73j1Eemxj8C-8xluuw" name="reinicia"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8kL8Xj1Eemxj8C-8xluuw" name="ehValido">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8kL73j1Eemxj8C-8xluuw" name="reinicia" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r8kL8Xj1Eemxj8C-8xluuw" name="ehValido" visibility="private">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_r8kL8nj1Eemxj8C-8xluuw" name="ehValido" direction="return">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
       </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_L-PckJbaEemA1c-FEZl4Aw" name="dobraVolume"/>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_r8kL83j1Eemxj8C-8xluuw" name="Parametros"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_-yGVMHj6Eemxj8C-8xluuw" memberEnd="_-yIxcHj6Eemxj8C-8xluuw _-yJYgHj6Eemxj8C-8xluuw">
@@ -842,25 +843,53 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FLLMcHqCEemam-8madTT3Q" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_VdmmUHkHEemxj8C-8xluuw" name="Cofiguracao">
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_mGOlcHkHEemxj8C-8xluuw" name="ehValido">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ImKCYHp-Eemam-8madTT3Q" direction="return">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_xjM9sHs5Eem2qYtNS3Z9cQ" client="_r8hvoHj1Eemxj8C-8xluuw" supplier="_-I5O4Hj0Eemxj8C-8xluuw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HqVUMJbWEemA1c-FEZl4Aw" name="Arquivos">
+      <generalization xmi:type="uml:Generalization" xmi:id="_HqV7QJbWEemA1c-FEZl4Aw" general="_r8ghgHj1Eemxj8C-8xluuw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3mCfQJbXEemA1c-FEZl4Aw" name="nome">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_-NpFYJbXEemA1c-FEZl4Aw" name="abreTxt"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Bdr50JbYEemA1c-FEZl4Aw" name="salvaMIDI">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ym5B4JdYEem3tezc6ykQIA" name="texto">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_rf1ucHkHEemxj8C-8xluuw" name="reinicia"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_HqV7QZbWEemA1c-FEZl4Aw" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_HqV7QpbWEemA1c-FEZl4Aw" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_HqV7Q5bWEemA1c-FEZl4Aw" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_HqV7RJbWEemA1c-FEZl4Aw" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_HqV7RZbWEemA1c-FEZl4Aw" name="Class1"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_j8PG4Hp3Eemam-8madTT3Q" name="AlteraConfiguracao">
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_j8PG4Xp3Eemam-8madTT3Q" name="aumenta"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_j8PG4np3Eemam-8madTT3Q" name="diminui"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SjWFIJbWEemA1c-FEZl4Aw" memberEnd="_SjdZ4JbWEemA1c-FEZl4Aw _SjeoAJbWEemA1c-FEZl4Aw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SjcLwJbWEemA1c-FEZl4Aw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Sjcy0JbWEemA1c-FEZl4Aw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_SjeoAJbWEemA1c-FEZl4Aw" type="_iefUoHkFEemxj8C-8xluuw" association="_SjWFIJbWEemA1c-FEZl4Aw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_SjdZ4JbWEemA1c-FEZl4Aw" type="_HqVUMJbWEemA1c-FEZl4Aw" association="_SjWFIJbWEemA1c-FEZl4Aw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RTEWwJbbEemA1c-FEZl4Aw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RTtP8JbbEemA1c-FEZl4Aw" value="*"/>
+      </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_dlGQgHs5Eem2qYtNS3Z9cQ" client="_r8WwgHj1Eemxj8C-8xluuw" supplier="_VdmmUHkHEemxj8C-8xluuw"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_g0jPEHs5Eem2qYtNS3Z9cQ" client="_r8WwgHj1Eemxj8C-8xluuw" supplier="_j8PG4Hp3Eemam-8madTT3Q"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_l9F2MHs5Eem2qYtNS3Z9cQ" client="_r8kL4Hj1Eemxj8C-8xluuw" supplier="_VdmmUHkHEemxj8C-8xluuw"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_pzQ2gHs5Eem2qYtNS3Z9cQ" client="_r8kL4Hj1Eemxj8C-8xluuw" supplier="_j8PG4Hp3Eemam-8madTT3Q"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_xjM9sHs5Eem2qYtNS3Z9cQ" client="_r8hvoHj1Eemxj8C-8xluuw" supplier="_-I5O4Hj0Eemxj8C-8xluuw"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_5IcQwHs5Eem2qYtNS3Z9cQ" client="_r8YlsHj1Eemxj8C-8xluuw" supplier="_VdmmUHkHEemxj8C-8xluuw"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_esIfIHs7Eem2qYtNS3Z9cQ" client="_r8YlsHj1Eemxj8C-8xluuw" supplier="_j8PG4Hp3Eemam-8madTT3Q"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yenLEJbaEemA1c-FEZl4Aw" name="Pausa">
+      <generalization xmi:type="uml:Generalization" xmi:id="_yenLEZbaEemA1c-FEZl4Aw" general="_r8ghgHj1Eemxj8C-8xluuw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_9V6r0JbaEemA1c-FEZl4Aw" name="SIMBOLO_DE_PAUSA">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3yjJ4JbaEemA1c-FEZl4Aw" name="lerPausa"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_yenLEpbaEemA1c-FEZl4Aw" name="PrimitiveType1"/>
+      <nestedClassifier xmi:type="uml:Interface" xmi:id="_yenLE5baEemA1c-FEZl4Aw" name="Interface1"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_yenLFJbaEemA1c-FEZl4Aw" name="Enumeration1"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_yenLFZbaEemA1c-FEZl4Aw" name="DataType1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_yenLFpbaEemA1c-FEZl4Aw" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HTRFwJbbEemA1c-FEZl4Aw" memberEnd="_HTST4ZbbEemA1c-FEZl4Aw _HTS68JbbEemA1c-FEZl4Aw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HTRs0JbbEemA1c-FEZl4Aw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HTST4JbbEemA1c-FEZl4Aw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_HTS68JbbEemA1c-FEZl4Aw" type="_yenLEJbaEemA1c-FEZl4Aw" association="_HTRFwJbbEemA1c-FEZl4Aw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_HTST4ZbbEemA1c-FEZl4Aw" type="_r8RQ8Hj1Eemxj8C-8xluuw" association="_HTRFwJbbEemA1c-FEZl4Aw"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_aYxcoHt0EemwfpnZh8YyZA" name="classDiagram_parte2Opcional">
     <packagedElement xmi:type="uml:Dependency" xmi:id="_N5c_wHt1EemwfpnZh8YyZA" client="_aYxcoHt0EemwfpnZh8YyZA" supplier="_N5pNAHt1EemwfpnZh8YyZA"/>
@@ -1191,6 +1220,138 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="_8Bzr8Ht4EemwfpnZh8YyZA" client="_N5gDFXt1EemwfpnZh8YyZA" supplier="_aYxcoHt0EemwfpnZh8YyZA"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_AqhjgHt5EemwfpnZh8YyZA" client="_N5mwwXt1EemwfpnZh8YyZA" supplier="_1t1eYHt2EemwfpnZh8YyZA"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_D1wwcHt5EemwfpnZh8YyZA" client="_N5k7kHt1EemwfpnZh8YyZA" supplier="_1t1eYHt2EemwfpnZh8YyZA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ytU7sMzAEemJIem5YkZrQA" name="Agricultor"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_5I7GIMzAEemJIem5YkZrQA" name="Configurar estilo de cultivo automático">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Dg0uEMzBEemJIem5YkZrQA" name="Determinar os níveis de requisitos da planta"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_LZEcsMzBEemJIem5YkZrQA" name="Monitoramento por vídeo">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_LZEcsczBEemJIem5YkZrQA" name="Determinar os níveis de requisitos da planta"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_1vNFkMzyEemJIem5YkZrQA" name="Monitoramento">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_1vNFkczyEemJIem5YkZrQA" name="Determinar os níveis de requisitos da planta"/>
+    </ownedUseCase>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_el0lcMzBEemJIem5YkZrQA" name="Permitir acesso à estufa">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_el0lcczBEemJIem5YkZrQA" name="Determinar os níveis de requisitos da planta"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xRkS4MzBEemJIem5YkZrQA" memberEnd="_xRnWMMzBEemJIem5YkZrQA _xRn9QMzBEemJIem5YkZrQA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xRmvIMzBEemJIem5YkZrQA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xRmvIczBEemJIem5YkZrQA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xRnWMMzBEemJIem5YkZrQA" name="agricultor" type="_ytU7sMzAEemJIem5YkZrQA" association="_xRkS4MzBEemJIem5YkZrQA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xRn9QMzBEemJIem5YkZrQA" name="monitoramento" type="_LZEcsMzBEemJIem5YkZrQA" association="_xRkS4MzBEemJIem5YkZrQA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_w9V5EMzyEemJIem5YkZrQA" name="Gerente de segurança"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zbldIMzyEemJIem5YkZrQA" memberEnd="_zbnSUczyEemJIem5YkZrQA _zbogcMzyEemJIem5YkZrQA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zbmrQMzyEemJIem5YkZrQA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zbnSUMzyEemJIem5YkZrQA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zbnSUczyEemJIem5YkZrQA" name="dono da estufa" type="_w9V5EMzyEemJIem5YkZrQA" association="_zbldIMzyEemJIem5YkZrQA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zbogcMzyEemJIem5YkZrQA" name="crud de permição de acesso" type="_el0lcMzBEemJIem5YkZrQA" association="_zbldIMzyEemJIem5YkZrQA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_2cLgUMzyEemJIem5YkZrQA" name="Acesso à estufa">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_2cLgUczyEemJIem5YkZrQA" name="Determinar os níveis de requisitos da planta"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5AURAMzyEemJIem5YkZrQA" memberEnd="_5AWtQMzyEemJIem5YkZrQA _5AWtQczyEemJIem5YkZrQA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5AWGMMzyEemJIem5YkZrQA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5AWGMczyEemJIem5YkZrQA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5AWtQMzyEemJIem5YkZrQA" name="acesso à estufa" type="_2cLgUMzyEemJIem5YkZrQA" association="_5AURAMzyEemJIem5YkZrQA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5AWtQczyEemJIem5YkZrQA" name="agricultor" type="_ytU7sMzAEemJIem5YkZrQA" association="_5AURAMzyEemJIem5YkZrQA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wI6UAM0JEemyps0d1uYH4A" memberEnd="_wI8wQM0JEemyps0d1uYH4A _wI9XUM0JEemyps0d1uYH4A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wI8JMM0JEemyps0d1uYH4A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wI8JMc0JEemyps0d1uYH4A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wI8wQM0JEemyps0d1uYH4A" name="gerente de segurança" type="_w9V5EMzyEemJIem5YkZrQA" association="_wI6UAM0JEemyps0d1uYH4A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wI9XUM0JEemyps0d1uYH4A" name="monitoramento remoto" type="_LZEcsMzBEemJIem5YkZrQA" association="_wI6UAM0JEemyps0d1uYH4A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_pxPVgM30Eem0luzmPaJRCg" name="Gerente de Agricultor">
+    <generalization xmi:type="uml:Generalization" xmi:id="_w49mIM30Eem0luzmPaJRCg" general="_ytU7sMzAEemJIem5YkZrQA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_u6S6AM30Eem0luzmPaJRCg" memberEnd="_u6sioM30Eem0luzmPaJRCg _u6twwM30Eem0luzmPaJRCg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u6o4QM30Eem0luzmPaJRCg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u6qGYM30Eem0luzmPaJRCg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_u6sioM30Eem0luzmPaJRCg" name="gerente de agricultor" type="_pxPVgM30Eem0luzmPaJRCg" association="_u6S6AM30Eem0luzmPaJRCg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_u6twwM30Eem0luzmPaJRCg" name="configurar forma de automação" type="_5I7GIMzAEemJIem5YkZrQA" association="_u6S6AM30Eem0luzmPaJRCg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_bSnd0M66EemOwaavM7Zjug" name="Comandar ação na estufa">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_bSnd0c66EemOwaavM7Zjug" name="Determinar os níveis de requisitos da planta"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_bSnd0s66EemOwaavM7Zjug" name="Monitoramento">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_bSnd0866EemOwaavM7Zjug" name="Determinar os níveis de requisitos da planta"/>
+    </ownedUseCase>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fCY7MM66EemOwaavM7Zjug" memberEnd="_fCb-gM66EemOwaavM7Zjug _fCclkM66EemOwaavM7Zjug">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fCawYM66EemOwaavM7Zjug" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fCbXcM66EemOwaavM7Zjug" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fCb-gM66EemOwaavM7Zjug" name="coandar ação na estufa" type="_bSnd0M66EemOwaavM7Zjug" association="_fCY7MM66EemOwaavM7Zjug"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fCclkM66EemOwaavM7Zjug" name="gerente de agricultor" type="_pxPVgM30Eem0luzmPaJRCg" association="_fCY7MM66EemOwaavM7Zjug"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_43MWAM66EemOwaavM7Zjug" memberEnd="_43OyQs66EemOwaavM7Zjug _43PZUM66EemOwaavM7Zjug">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_43OyQM66EemOwaavM7Zjug" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_43OyQc66EemOwaavM7Zjug" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_43OyQs66EemOwaavM7Zjug" name="acesso à estufa" type="_2cLgUMzyEemJIem5YkZrQA" association="_43MWAM66EemOwaavM7Zjug"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_43PZUM66EemOwaavM7Zjug" name="gerente de segurança" type="_w9V5EMzyEemJIem5YkZrQA" association="_43MWAM66EemOwaavM7Zjug"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_PJ90gM67EemOwaavM7Zjug" name="Consultar informações da estufa">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_PJ90gc67EemOwaavM7Zjug" name="Determinar os níveis de requisitos da planta"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_PJ90gs67EemOwaavM7Zjug" name="Monitoramento">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_PJ90g867EemOwaavM7Zjug" name="Determinar os níveis de requisitos da planta"/>
+    </ownedUseCase>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_R9Te0M67EemOwaavM7Zjug" memberEnd="_R9V7EM67EemOwaavM7Zjug _R9WiIM67EemOwaavM7Zjug">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R9Us8M67EemOwaavM7Zjug" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_R9VUAM67EemOwaavM7Zjug" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_R9V7EM67EemOwaavM7Zjug" name="agricultor" type="_ytU7sMzAEemJIem5YkZrQA" association="_R9Te0M67EemOwaavM7Zjug"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_R9WiIM67EemOwaavM7Zjug" name="histórico de consumo" type="_PJ90gM67EemOwaavM7Zjug" association="_R9Te0M67EemOwaavM7Zjug"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_UljTcM67EemOwaavM7Zjug" name="Histórico de crescimento das plantas">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_UljTcc67EemOwaavM7Zjug" name="Determinar os níveis de requisitos da planta"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_UljTcs67EemOwaavM7Zjug" name="Monitoramento">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_UljTc867EemOwaavM7Zjug" name="Determinar os níveis de requisitos da planta"/>
+    </ownedUseCase>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XrRuQM67EemOwaavM7Zjug" memberEnd="_XrTjcc67EemOwaavM7Zjug _XrUKgM67EemOwaavM7Zjug">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XrS8YM67EemOwaavM7Zjug" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XrTjcM67EemOwaavM7Zjug" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XrTjcc67EemOwaavM7Zjug" name="agricultor" type="_ytU7sMzAEemJIem5YkZrQA" association="_XrRuQM67EemOwaavM7Zjug"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XrUKgM67EemOwaavM7Zjug" name="histórico de crescimento" type="_UljTcM67EemOwaavM7Zjug" association="_XrRuQM67EemOwaavM7Zjug"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_0ROwEM-BEemYJOrdE1dA7A" name="Retirar acesso à estufa">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_0ROwEc-BEemYJOrdE1dA7A" name="Determinar os níveis de requisitos da planta"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_25l5cM-BEemYJOrdE1dA7A" memberEnd="_25pj0M-BEemYJOrdE1dA7A _25qK4M-BEemYJOrdE1dA7A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_25oVsM-BEemYJOrdE1dA7A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_25o8wM-BEemYJOrdE1dA7A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_25pj0M-BEemYJOrdE1dA7A" name="retirar acesso à estufa" type="_0ROwEM-BEemYJOrdE1dA7A" association="_25l5cM-BEemYJOrdE1dA7A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_25qK4M-BEemYJOrdE1dA7A" name="gerente de segurança" type="_w9V5EMzyEemJIem5YkZrQA" association="_25l5cM-BEemYJOrdE1dA7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_VS05AM-TEemYJOrdE1dA7A" name="Administrador"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XR_UYM-TEemYJOrdE1dA7A" name="Adiciona pessoas">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_XR_UYc-TEemYJOrdE1dA7A" name="Determinar os níveis de requisitos da planta"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ZGxEsM-TEemYJOrdE1dA7A" name="Edita pessoas">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_ZGxEsc-TEemYJOrdE1dA7A" name="Determinar os níveis de requisitos da planta"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_a9PeIM-TEemYJOrdE1dA7A" memberEnd="_a9R6YM-TEemYJOrdE1dA7A _a9ShcM-TEemYJOrdE1dA7A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a9RTUM-TEemYJOrdE1dA7A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a9RTUc-TEemYJOrdE1dA7A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_a9R6YM-TEemYJOrdE1dA7A" name="administrador" type="_VS05AM-TEemYJOrdE1dA7A" association="_a9PeIM-TEemYJOrdE1dA7A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_a9ShcM-TEemYJOrdE1dA7A" name="adiciona pessoas" type="_XR_UYM-TEemYJOrdE1dA7A" association="_a9PeIM-TEemYJOrdE1dA7A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bcYRMM-TEemYJOrdE1dA7A" memberEnd="_bcaGYc-TEemYJOrdE1dA7A _bcatcM-TEemYJOrdE1dA7A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bcZfUM-TEemYJOrdE1dA7A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bcaGYM-TEemYJOrdE1dA7A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bcaGYc-TEemYJOrdE1dA7A" name="administrador" type="_VS05AM-TEemYJOrdE1dA7A" association="_bcYRMM-TEemYJOrdE1dA7A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bcatcM-TEemYJOrdE1dA7A" name="edita pessoas" type="_ZGxEsM-TEemYJOrdE1dA7A" association="_bcYRMM-TEemYJOrdE1dA7A"/>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_EnM9EHhbEemSMK_ZCOIU2w">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EnOyQHhbEemSMK_ZCOIU2w" source="PapyrusVersion">

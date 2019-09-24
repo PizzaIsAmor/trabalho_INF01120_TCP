@@ -1,16 +1,17 @@
 package inf01120.player;
 
-public abstract class Nota extends ItemMusical implements ComportamentoNota {
-	private int oitava;
+public abstract class Nota {
+	// Atributos
+	private Oitava oitava;
 	
-	Nota( ){
-		super( true );
-		this.oitava = new Oitava( ).lerOitava( );
+	// Construtor e metodos
+	public Nota(){
+		this.oitava = new Oitava();
 	}
 	
-	public abstract String lerNota( );	
+	public abstract String lerNota();
 	
-	public String lerOitava( ){
-		return Integer.toString( this.oitava );
+	protected String lerOitava(){
+		return Integer.toString(this.oitava.lerOitava());
 	}
 }
